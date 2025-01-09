@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    margin: 20px auto;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+.starting-block {
+    background-color: blue;
+}
+
+.ending-block {
+    background-color: red;
+}
+
+.frog {
+    background-color: green;
+}
