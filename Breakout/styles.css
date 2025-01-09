@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #1d3557, #457b9d, #1d3557);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #f1faee;
+}
+
+/* Styling for the score display */
+#score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #a8dadc;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Grid container */
+.grid {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: linear-gradient(to bottom, #1d3557, #457b9d);
+    border: 4px solid #f1faee;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 60px;
+}
+
+/* Block styling */
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(to bottom, #e63946, #f72585);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* User paddle styling */
+.user {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    background: linear-gradient(to right, #06d6a0, #118ab2);
+    border: 2px solid #06d6a0;
+    border-radius: 10px;
+    bottom: 10px;
+    left: 240px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.user:hover {
+    background: linear-gradient(to right, #118ab2, #06d6a0);
+    transform: scale(1.1);
+}
+
+/* Ball styling */
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at center, #f4a261, #e76f51);
+    border-radius: 50%;
+    bottom: 50px;
+    left: 290px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease;
+}
+
+/* Game Over and Win styles */
+.win,
+.lose {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.win {
+    color: #06d6a0;
+}
+
+.lose {
+    color: #e63946;
+}
+
+.win.show,
+.lose.show {
+    display: block;
+}
+
