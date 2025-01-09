@@ -1,0 +1,94 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #a8e6ff, #f6d8f4);
+    color: #333;
+}
+
+h3 {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6d83f2, #a768e8);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #a768e8, #6d83f2);
+    transform: scale(1.05);
+}
+
+/* Grid Styling */
+.grid {
+    border: 2px solid black;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #d8f8ff, #e1e9ff);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+/* Special Blocks */
+.ending-block {
+    background-color: rgb(255, 99, 99);
+    border: 2px solid rgb(210, 85, 85);
+    border-radius: 50%;
+}
+
+.starting-block {
+    background-color: rgb(99, 128, 255);
+    border: 2px solid rgb(75, 110, 220);
+    border-radius: 50%;
+}
+
+/* Log Styling */
+.l1, .l2, .l3 {
+    background-color: brown;
+    animation: move-log-left 5s linear infinite;
+}
+
+.l4, .l5 {
+    background-color: rgb(164, 202, 215);
+    animation: move-log-right 5s linear infinite;
+}
+
+/* Car Styling */
+.c1 {
+    background-color: rgb(14, 14, 14);
+    animation: move-car-left 3s linear infinite;
+}
+
+.c2, .c3 {
+    background-color: rgb(215, 213, 213);
+    animation: move-car-right 3s linear infinite;
+}
+
+/* Frog Styling */
+.frog {
+    background-color: rgb(1, 149, 1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 255, 0, 0.8);
+}
